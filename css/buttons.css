@@ -1,0 +1,35 @@
+@import url(./colors.css);
+
+.btn {
+    background-color: var(--indigo);
+    color: #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: 0.5s all ease-out;
+}
+
+
+.btn:hover {
+    background-color: var(--sariq);
+    color: var(--indigo);
+}
+
+.header__btn {
+    margin: 30px 0px;
+}
+.header__btn2{
+    margin: 30px 0 30px 30px;
+}
+.header__btn_2 {
+    
+    background-color: transparent;
+    color: var(--sariq);
+    border: 2px solid var(--sariq);
+}
