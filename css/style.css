@@ -46,7 +46,8 @@ p {
 
 
 .get-acquainted__h1,
-.conveniences__h1{
+.conveniences__h1,
+.suggestion__h1{
     font-size: 40px;
     font-weight: 100;
     line-height: 60px;
@@ -499,3 +500,50 @@ p {
 
 
 /* work-area end */
+
+
+/* suggestion start */
+.suggestion__box {
+    min-height: 110vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 0;
+    
+}
+
+.suggestion__text {
+    width: 50%;
+    padding: 10px 10px 10px 0;
+}
+.suggestion__title h1 {
+    font-size: 50px;
+}
+.suggestion__p {
+    padding: 10px 0 40px 0;
+}
+
+.suggestion__img {
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+}
+.suggestion__img-box {
+    width: 100%;
+    height: 400px;
+}
+.suggestion__img-box img {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+/* suggestion end */
+
+
