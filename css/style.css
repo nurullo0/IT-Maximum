@@ -85,8 +85,19 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* .logo img {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+} */
 .logo h1 {
-    color: rgb(162, 178, 233);
+    font-weight: 900;
+    font-size: 35px;
+    color: rgb(209, 2, 250);
+    /* text-shadow: 0px -4px 2px rgb(255, 255, 255),
+    0px 4px 2px #fff,
+    3px 0px 2px #fff,
+    -3px 0px 3px #fff; */
 }
 
 .nav {
@@ -350,6 +361,9 @@ p {
     padding: 70px 0;
     background:linear-gradient(150deg, rgb(96, 183, 255),var(--indigo));
 }
+.work-area__logo-text {
+    font-size: 50px;
+}
 
 
 .work-area__coursel-wrapping {
@@ -539,11 +553,74 @@ p {
 
 
 
-
-
-
-
-
 /* suggestion end */
 
 
+/* contacts start */
+.contacts__container {
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.contacts__title-box {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+.contacts__title-h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.contacts__body-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    width: 100%;
+    min-height: 500px;
+}
+
+.contacts__text-box {
+    width: 20%;
+    height: 100%;
+}
+
+.contacts__text-box > *:not(:last-child){
+    margin: 0 0 30px 0;
+}
+
+.contacts__links > *:not(:last-child){
+    margin:  0 0 40px 0;
+    display: flex;
+    align-items: center;
+
+}
+.contacts__links ion-icon {
+    font-size: 25px;
+    color: var(--indigo);
+    margin: 0 20px 0 0;
+}
+.address,
+.tel-number,
+.gmail {
+    display: flex;
+    cursor: pointer;
+}
+.address:hover>*,
+.tel-number:hover>*,
+.gmail:hover>* {
+    color: var(--sariq);
+    transition: 0.5s ease;
+} 
+.contacts__links a {
+    color: var(--text-color);
+}
+
+
+.contacts__map-box {
+    width: 80%;
+    text-align: right;
+}
+
+/* contacts end */
