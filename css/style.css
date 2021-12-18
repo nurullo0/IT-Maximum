@@ -31,7 +31,7 @@ h1{
 
 p {
     font-size: 17px;
-    line-height: 29px;
+    line-height: 30px;
     font-weight: 500;
     color: var(--text-color);
 
@@ -515,6 +515,60 @@ p {
 
 /* work-area end */
 
+
+/* courses start */
+.courses {
+    background-color: #fff;
+}
+
+.courses__box {
+    position: relative;
+    min-height: 500px;
+}
+
+.courses__title-box {
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+}
+.courses__title-h1 {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+.menu__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+}
+.menu__item {
+    margin: 0 13px 10px 13px;
+    transition: 0.5s ease;
+
+}
+.menu__item:hover h4 {
+    color: var(--indigo);
+    cursor: pointer;
+}
+.menu__item:after{
+    content: " ";
+    display: inline-block;
+    width: 0%;
+    height: 2px;
+    background-color: var(--indigo);
+    transition: 0.5s ease;
+}
+.menu__item:hover::after {
+    width: 100%;
+    color: var(--indigo);
+}
+
+
+
+
+/* courses starend */
 
 /* suggestion start */
 .suggestion__box {
