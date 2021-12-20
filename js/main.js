@@ -1,3 +1,17 @@
+const menuOpen = document.querySelector('.menu-open'),
+      menuClose = document.querySelector('.menu-close'),
+      menuBtn = document.querySelector('.menu__icon'),
+      navMenu = document.querySelector('.nav-media');
+
+
+menuBtn.addEventListener('click', () =>  {
+   menuOpen.classList.toggle('menu__icon_active')
+   menuClose.classList.toggle('menu__icon_active')
+   navMenu.classList.toggle('nav-media_active')
+})
+
+
+
 const corusels = document.querySelectorAll(".work-area__coursel")
 
 

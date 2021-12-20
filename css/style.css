@@ -12,6 +12,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 body a {
     text-decoration: none;
     font-size: 16px;
@@ -90,18 +91,10 @@ p {
     height: 100px;
     background-size: cover;
 }
-/* .logo h1 {
-    font-weight: 900;
-    font-size: 35px;
-    color: rgb(209, 2, 250); */
-    /* text-shadow: 0px -4px 2px rgb(255, 255, 255),
-    0px 4px 2px #fff,
-    3px 0px 2px #fff,
-    -3px 0px 3px #fff; */
-/* } */
 
 .nav {
     display: block;
+    width: 700px;
 }
 
 .header__navbar {
@@ -121,10 +114,10 @@ p {
 
 .nav__item {
     list-style: none;
-    padding: 0px 15px;
+    padding: 0px 10px;
 }
 
-.nav__item::after {
+.nav__item::after,.nav-media__item::after {
     display: block;
     width: 0%;
     height: 2px;
@@ -132,13 +125,13 @@ p {
     transition: 1s all ease-out;
 }
 
-.nav__item:hover::after {
+.nav__item:hover::after,.nav-media__item:hover::after {
     width: 100%;
     transition: 0.5s all ease-out;
     background-color: var(--sariq);
 }
 
-.nav__item:hover .nav__link {
+.nav__item:hover .nav__link ,.nav-media__item:hover .nav-media__link{
     transition: 0.5s all ease-out;
     color: var(--sariq);
 }
@@ -155,11 +148,76 @@ p {
     color: var(--sariq);
 
 }
+.nav-media {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: var(--indigo) ;
+    z-index: 10;
+    animation: close 1s;
+    display: none;
+    transform: translateX(150%);
+    /* animation: open 1s; */
+}
+.nav-media .nav-media__lists {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+    justify-content: center;
+    list-style: none;
 
-.menu-open {
+}
+
+.nav-media .nav-media__item {
+    margin: 0 0 20px 0;
+}
+.nav-media_active{
+    display: block;
+    animation: open 1s;
+    transform: translateX(0%);
+}
+.menu__icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    z-index: 101;
+}
+.menu-open,.menu-close {
     display: none;
     font-size: 50px;
-    color: var(--sariq);
+    color: #fff;
+    z-index: 103;
+   
+}
+.menu__icon_active {
+    display: block;
+}
+
+
+@keyframes open {
+    0%{
+        transform: translateX(150%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+    
+}
+
+@keyframes close {
+    0%{
+        display: none;
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(150%);
+    }
+    
 }
 
 /* header body style start */
@@ -184,6 +242,8 @@ p {
 
 .header__texts {
     padding: 20px 0;
+    width: 100%;
+    height: 150px;
 }
 
 .header__title-h1 {
@@ -199,8 +259,11 @@ p {
 
 
 .header__btns {
-    padding: 40px 0 0 0;
+    width: 100%;
     display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* flex-direction: column; */
 }
 
 .header_left {
@@ -249,8 +312,9 @@ p {
 .get-acquainted__container
 {
     display: flex;
-    min-height: 900px;
-    padding: 100px 0;
+
+    min-height: 850px;
+    padding: 60px 0;
 }
 .get-acquainted__imgs {
     width: 50%;
@@ -326,10 +390,11 @@ p {
 
 .conveniences__container {
     display: flex;
-    height: 650px;
+    min-height: 650px;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    flex-wrap: wrap;
+    padding: 60px 0;
 }
 .conveniences__title {
     width: 25%;
@@ -368,10 +433,11 @@ p {
 
 .work-area__coursel-wrapping {
     width: 100%;
-    min-height: 1000px;
+    min-height: 1200px;
     display: flex;
     text-align: start;
     justify-content: center;
+
     overflow: hidden;
     background-color: #fff;
     position: relative;
@@ -379,8 +445,7 @@ p {
 
 .work-area__coursel {
     width: 100%;
-    height: 100%;
-    /* position: absolute; */
+    min-height: 100%;
     padding: 50px 0px 50px 50px;
     display: flex;
     justify-content: center;
@@ -575,6 +640,8 @@ p {
     min-height: 110vh;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
     padding: 60px 0;
     
 }
@@ -596,7 +663,8 @@ p {
     overflow: hidden;
 }
 .suggestion__img-box {
-    width: 100%;
+    width: 650px;
+    margin: 0 auto;
     height: 400px;
 }
 .suggestion__img-box img {
@@ -681,16 +749,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* footer start */
 .footer__box {
     width: 100%;
@@ -732,9 +790,120 @@ p {
     margin: 20px 0 0 0;
 }
 
-
-
-
-
-
 /* footer end */
+
+
+@import url(./colors.css);
+@import url(./buttons.css);
+@import url(./style.css);
+@import url(./cards.css);
+
+/* media start */
+@media (max-width: 576px) { 
+
+}
+
+@media (max-width: 767px) { 
+
+}
+
+@media (max-width: 991px) { 
+
+    .nav {
+        display: none;
+    }
+    .nav-media {
+        display: block;
+    }
+    .menu__icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 10%;
+        z-index: 101;
+    }
+    .menu__icon_active {
+        display: block;
+        color: #fff;
+        position: absolute;
+        z-index: 100;
+    }
+   
+   .header_right {
+       text-align: center;
+       width: 100%;
+       padding: 0 50px;
+   }
+   .header_left {
+       display: none;
+   }
+   .get-acquainted__container {
+       flex-wrap: wrap;
+   }
+   .get-acquainted__imgs {
+       width: 100%;
+   }
+   .get-acquainted__img-border {
+    
+    width: 630px;
+    height: 510px;
+    
+}
+
+   .get-acquainted__texts {
+       width: 100%;
+       text-align: center;
+   }
+   .work-area__coursel {
+    flex-direction: column;
+    padding: 0;
+
+   }
+   .work-area__coursel-texts{
+       width: 70%;
+       min-height: auto;
+   }
+
+   .work-area__coursel-imgs {
+       width: 650px;
+       height: 400px;
+       padding: 0 0;
+   }
+
+   .suggestion__text {
+       width: 100%;
+       text-align: center;
+    }
+
+   .suggestion__img {
+        width: 100%;
+        padding: 10px;
+    }
+    .suggestion__body {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contacts__text-box {
+        width: 100%;
+        text-align: center;
+
+    }
+    .contacts__map-box {
+        width: 650px;
+        height: 500px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+
+
+@media (max-width: 1200px) { 
+
+ 
+}
+
+

@@ -12,8 +12,9 @@
         rel="stylesheet">
     <title>IT Maximum</title>
     <link rel="stylesheet" href="./css/cards.css">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/buttons.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 
 
 </head>
@@ -56,8 +57,13 @@
                     </li>
                 </ul>
             </nav>
-            <ion-icon id="menuOpen" class="menu-open" name="menu-outline"></ion-icon>
+           <div class="menu__icon">
+            <ion-icon id="menuOpen" class="menu-open menu__icon_active" name="menu-outline"></ion-icon>
+            <ion-icon id="menuClose" class="menu-close" name="close-outline"></ion-icon>
+           </div>
+           
         </div>
+        
         <!-- header nav end -->
 
         <!-- header body start -->
@@ -859,11 +865,11 @@
     </footer>
     <!-- footer end -->
     <!-- go up btn start  -->
-    <div class="go-up">
-        <a href="#">
+    <a href="#">
+        <div class="go-up">
             <ion-icon name="arrow-up-outline"></ion-icon>
-        </a>
-    </div>
+        </div>
+    </a>
     <!-- go up btn end  -->
 
 
