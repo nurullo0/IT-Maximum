@@ -1,3 +1,10 @@
+const btnScrollToTop = document.querySelector('#back-to-top');
+
+btnScrollToTop.addEventListener('click' , function (){
+    $("html , body").animate({scrollTop: 100 }, "slow");
+
+})
+
 const menuOpen = document.querySelector('.menu-open'),
       menuClose = document.querySelector('.menu-close'),
       menuBtn = document.querySelector('.menu__icon'),
