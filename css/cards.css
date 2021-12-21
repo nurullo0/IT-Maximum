@@ -1,6 +1,5 @@
+.cards-box {
 
-.cards-box{
-    
   display: grid;
   place-items: center;
   min-height: 800px;
@@ -31,7 +30,7 @@
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
 }
 
@@ -52,25 +51,25 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
   font-size: .75rem;
 }
 
-.tag + .tag {
+.tag+.tag {
   margin-left: .5em;
 }
 
 .tag-blue {
   background: #56CCF2;
-background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
   color: #fafafa;
 }
 
 .tag-brown {
   background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
   color: #fafafa;
 }
 
 .tag-red {
   background: #cb2d3e;
-background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #fafafa;
 }
 
@@ -89,13 +88,15 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   display: flex;
   align-items: center;
 }
+
 .card__time ion-icon, .card__cash ion-icon {
   font-size: 20px;
   /* margin: 0 20px 0 0; */
   color: var(--indigo);
 }
-.card__time > *, .card__cash > *{
-  margin: 0 10px 0 0 ;
+
+.card__time>*, .card__cash>* {
+  margin: 0 10px 0 0;
 }
 
 
